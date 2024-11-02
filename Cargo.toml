@@ -1,0 +1,9 @@
+[package]
+name = "nubmoan"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+input = "0.9.1"
+libc = "0.2"
+rodio = "0.19.0"
