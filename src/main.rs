@@ -67,7 +67,7 @@ fn main() -> Result<(), Box<dyn Error>>{
     loop {
         input.dispatch().unwrap();
         for event in &mut input  {
-            if event.device().name() == "DELL0AD9:00 27C6:0D43 Touchpad"{
+            if event.device().name() == "Elan TrackPoint"{
                 count += 1;
                 if count == 50 {
                     let _ = stream_handle.play_raw(sound.decoder().convert_samples());
